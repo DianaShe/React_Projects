@@ -1,0 +1,40 @@
+.container {
+  margin-top: 20px;
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.select {
+  display: block;
+  width: 140px;
+  
+  height: 40px;
+  border-radius: 8px;
+}
+
+.input {
+  display: block;
+  width: 50%;
+  height: 80px;
+  border-radius: 8px;
+}
+
+.progress-container {
+    width: 100%;
+    overflow: hidden;
+    height: 30px;
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  .progress-bar {
+    border-radius: 8px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s ease;
+  }
+
+.btn {
+  padding: 10px 20px;
+}
