@@ -8,9 +8,13 @@ class Circle {
     return this._radius;
   }
   set radius(value) {
+    if (value <= 0) {
+      alert("Value should be positive");
+      return;
+    }
     this._radius = value;
   }
-  get diametr() {
+  diametr() {
     return this._radius * 2;
   }
   countArea() {
@@ -24,7 +28,7 @@ class Circle {
 const userCircle = new Circle(7.5);
 
 console.log(userCircle.radius);
-console.log(userCircle.diametr);
+console.log(userCircle.diametr());
 console.log(userCircle.countArea());
 console.log(userCircle.countLength());
 userCircle.radius = 5;
